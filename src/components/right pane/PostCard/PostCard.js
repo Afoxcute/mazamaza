@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
+import {connect} from 'react-redux';
+
 import './PostCard.css';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import ClearIcon from '@material-ui/icons/Clear';
 import ImageIcon from '@material-ui/icons/Image';
 import CheckIcon from '@material-ui/icons/Check';
+import {addPost} from '../../../redux/actions'
 
-function PostCard() {
+function PostCard({addPost}) {
   const [open, setOpen] = useState(false);
   const [post, setPost] = useState('');
   
@@ -22,6 +25,12 @@ function PostCard() {
       console.log('Type before submitting');
       return
     }
+    addPost({
+      id: 5,
+      userName: 'John Doe',
+      text: post,
+    });
+    setPost('');
     closeModal();
   }
 
@@ -49,4 +58,6 @@ function PostCard() {
   );
 }
 
-export default PostCard;
+
+
+export default connect(null, {addPost})(PostCard);

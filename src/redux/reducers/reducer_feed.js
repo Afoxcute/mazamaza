@@ -1,4 +1,4 @@
-import {NOTIFICATIONS} from '../types'
+import {NOTIFICATIONS, ADD_POST} from '../types'
 
 
 
@@ -40,6 +40,8 @@ export default function feedReducer(state = INITIAL_STATE, action) {
         return { ...state, users: { ...state.users, isFetching: false, data: action.payload } }; ///post 
       case `${NOTIFICATIONS}_failed`:
         return { ...state, users: { ...state.users, isFetching: false, err: action.payload } };
+      case ADD_POST:
+        return { ...state, data: [...state.data, action.payload] };
       default:
         return state;
     }
