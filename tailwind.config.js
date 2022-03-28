@@ -21,7 +21,7 @@ module.exports = {
       faintgreen: '#F9FFFD',
       boxborder: '#A3FBDB',
       btnhover: '#037D51',
-
+      lightgray: '#FAFAFA',
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,
@@ -32,6 +32,7 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      primary: '#4385F5',
     },
     spacing: {
       px: '1px',
