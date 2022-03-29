@@ -1,20 +1,20 @@
-#view{
-    height:100vh;
-    background-color: #fff;
+#view {
+  height: 100vh;
+  background-color: #fafafa;
 }
 
-.section{
-    width: 100%;
-    /*
+.section {
+  width: 100%;
+  /*
     height: 85%;
     padding: 0 1.875rem;
     padding-top: 4.75rem;
     */
-    display: flex;
-    flex-direction: row;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
 }
 
-#middle{
-    width: 50%;
+#middle {
+  width: 50%;
 }
