@@ -1,7 +1,4 @@
 
-
-
-
 const ProfileButton = ({ text, className}) => {
     return (
         <button className={className}>

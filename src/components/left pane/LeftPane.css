@@ -14,6 +14,9 @@
   background: #4385f5;
 }
 
+::-webkit-scrollbar {display:none;}
+
+
 .leftPane::-webkit-scrollbar {
   width: 0.15rem;
 }

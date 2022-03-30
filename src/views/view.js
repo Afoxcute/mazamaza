@@ -18,7 +18,7 @@ function View(props) {
       <Header />
       <div className="section">
         <LeftPane />
-        <section id="middle" className="bg-faintgreen min-w-min">
+        <section id="middle" className=" min-w-min">
           <PrivateRoute exact path="/" component={Feed} />
           <PrivateRoute exact path="/profile" component={Profile} />
           <PrivateRoute exact path="/group" component={Posts} />
