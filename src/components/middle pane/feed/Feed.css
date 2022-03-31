@@ -6,7 +6,9 @@
   border-radius: 20px;
   padding: 30px;
 }
-
+.main {
+  margin-top: 97px;
+}
 .icons {
     margin-top: 10px;
 }

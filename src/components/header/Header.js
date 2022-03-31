@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Input } from "antd";
 
@@ -16,6 +16,8 @@ import "./header.css";
 import { logo, profileImage, mazaryn } from "../../assets";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div id="header" className="z-50">
       <header>
@@ -71,10 +73,42 @@ const Header = () => {
             <span className="mr-3" style={{ color: "#585858" }}>
               Auwal Rg
             </span>
-            <ChevronDownIcon />
+            <div onClick={() => setIsOpen(!isOpen)} className="cursor-pointer">
+              <ChevronDownIcon />
+            </div>
           </div>
         </div>
       </header>
+      {isOpen ? (
+        <div className="flex justify-end  mr-14">
+          <div className="card ">
+            <div className="flex  items-center">
+              <img
+                src={profileImage}
+                alt="profile"
+                className="rounded-full mr-3"
+                style={{ width: 40, height: 40 }}
+              />
+              <div>
+                <span className="mr-3 name">Abubakar</span>
+                <br />
+                <span className="mr-3 username" style={{ color: "#585858" }}>
+                  @Auwalrg
+                </span>
+              </div>
+            </div>
+            <div className="divider py-2"></div>
+
+            <div className="mt-3">
+              <Link to="/login" style={{ color: "black" }}>
+                <button>Log Out</button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

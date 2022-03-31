@@ -11,6 +11,11 @@ import {
   World,
 } from "../../Icons/SvgIcons";
 
+const { TextArea } = Input;
+const onChange = e => {
+  console.log('Change:', e.target.value);
+};
+
 const PostCard = (props) => {
   return (
    
@@ -22,7 +27,7 @@ const PostCard = (props) => {
               className="rounded-full mr-3"
               style={{ width: 40, height: 40 }}
             />
-            <Input placeholder="Type something" bordered={false} />
+            <TextArea placeholder="Type something" bordered={false}  onChange={onChange} />
           </div>
           <div className="flex justify-between items-center mt-10 ">
             <div className="flex ">

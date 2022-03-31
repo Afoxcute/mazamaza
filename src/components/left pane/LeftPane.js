@@ -34,7 +34,7 @@ function LeftPane(props) {
       style={{
         padding: "0% 3%",
         width: "23%",
-        paddingTop: "25rem",
+        paddingTop: "23rem",
         paddingBottom: "5rem",
       }}
     >
