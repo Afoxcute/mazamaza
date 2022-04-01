@@ -1,13 +1,14 @@
 import React from "react";
 import "./Feed.css";
-import PostCard from "../Cards/PostCard"
-
+import PostCard from "../Cards/PostCard";
+import Post from "./Post";
 
 const Feed = (props) => {
   return (
     <div className="main h-screen">
-      <div className="flex flex-column align-center  items-center">
-       <PostCard />
+      <div className="flex flex-col align-center  items-center">
+        <PostCard />
+        <Post />
       </div>
     </div>
   );
