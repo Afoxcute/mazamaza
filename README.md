@@ -40,10 +40,7 @@ Note: Use this [link](https://www.figma.com/file/1Na0yKOBeh5Y852Px37SD5/Mazaryn-
 
 Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-## Contributors
 
-* [@Teddy Mbugua](https://github.com/tbm5k) 📖
-* [@Obinna Leo](https://github.com/Daltimore) 📖
 
 ## License
 <!--- If you're not sure which open license to use see https://choosealicense.com/--->
