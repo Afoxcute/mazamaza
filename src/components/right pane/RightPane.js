@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Adsense from 'react-adsense';
 
 //antd
 import { Progress } from "antd";
@@ -72,6 +73,13 @@ function RightPane(props) {
         icon={<FlameIcon />}
         buttonName="Follow"
         cardType="trending"
+      />
+      <Adsense.Google 
+        client="ca-pub-5924558149384541"
+        slot="3327381621"
+        format="auto"
+        responsive="true"
+        style={{display:"block"}}
       />
       <CustomCard
         name="Friend suggestion "
