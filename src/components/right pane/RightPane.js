@@ -93,6 +93,14 @@ function RightPane(props) {
         buttonName="Join"
         cardType="groups"
       />
+      <amp-ad width="100vw" height="320"
+        type="adsense"
+        data-ad-client="ca-pub-5924558149384541"
+        data-ad-slot="3327381621"
+        data-auto-format="rspv"
+        data-full-width="">
+        <div overflow=""></div>
+      </amp-ad>
     </div>
   );
 }
